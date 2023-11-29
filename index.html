@@ -1,1 +1,97 @@
-Test danielo
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1"/>
+    <title>Settings Sample</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+    <!-- Extensions Library (this will be hosted on a CDN eventually) -->
+    <script src="../../lib/tableau.extensions.1.latest.js"></script>
+    <script src="../../lib/jquery.loadTemplate.js" type="text/javascript"></script>
+    <!-- Our extension's code -->
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./deleteFilters_extension.js"></script>
+  </head>
+  <body>
+
+  <div class="container" id="main">
+      <h4 id="titleExtension">Filter oversikt</h4>
+      <button id="deleteFilters" type="button" class="btn btn-primary">Delete filters</button>
+      <!-- Filters Table -->
+      <div id="filters">
+        <div class="table-responsive" id="tableFilters">
+          <table id="loading" class="table">
+            <tbody><tr><td>Loading...</td></tr></tbody>
+          </table>
+          <table id="filtersTable" class="table table-striped hidden">
+            <thead>
+              <tr>
+                <th>Filtered Field</th>
+                <th style="width: 100%">Current Values</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <table id="noFiltersWarning" class="table bg-danger hidden">
+            <tbody><tr><td>There are no filters currently active in this dashboard.</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/html" id="settings-template">
+    <div class="container">
+      <!-- Existing Settings Table -->
+      <div id="settings">
+        <h4>Current Settings</h4>
+        <button id="closeSettings" type="button" class="btn btn-primary">Close</button>
+        <div class="table-responsive">
+          <table id="settingsTable" class="table table-striped hidden">
+            <thead>
+              <tr>
+                <th>Setting Name</th>
+                <th>Setting Value</th>
+                <th style="width: 100%">Erase?</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <table id="noSettingsWarning" class="table bg-danger hidden">
+            <tbody><tr><td>There are currently no saved settings for this extension.</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- New Settings Submission Form -->
+      <div id="newSetting">
+       <hr>
+        <form id="settingForm">
+          <div class="form-group">
+            <input id="keyInput" type="text" class="form-control" placeholder="Setting Key">
+          </div>
+          <div class="form-group">
+            <input id="valueInput" type="text" class="form-control" placeholder="Setting Value">
+          </div>
+          <button id="save" type="button" class="btn btn-primary">Save / Update</button>
+        </form>
+      </div>
+
+    </div>
+  </script>
+
+</html>
