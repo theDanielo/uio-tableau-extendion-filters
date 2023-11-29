@@ -4,7 +4,7 @@
     <default-locale>en_US</default-locale>
     <name resource-id="name"/>
     <description>This is an extension from UiO.</description>
-    <author name="tableau" email="github@tableau.com" organization="tableau" website="https://www.tableau.com"/>
+    <author name="tableau" email="daniel.gracia@admin.uio.no" organization="tableau" website="https://www.uio.no"/>
     <min-api-version>0.8</min-api-version>
     <source-location>
       <url>https://thedanielo.github.io/uio-tableau-extension-filters/index.html</url>
