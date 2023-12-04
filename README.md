@@ -3,6 +3,7 @@ uio-tableau-extension-filters
 
 ## Description
 This Tableau extension is designed to enhance user interaction with data filters within Tableau dashboards. The key functionality of this extension includes:
+This extension is totaly sandboxed, means that no data goes from or to the dashboard.
 
 **Filter overview**: Users see what filters are been active in the views.
 
