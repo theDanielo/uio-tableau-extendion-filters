@@ -45,18 +45,11 @@ Follow these steps to install the extension in Tableau:
 #### Use configuration in the extension menu for setting up parameters
 
 Add key/value
-*** bShowFilters: true*** this will show/hide the list of filters, with true will the extension just show the "reset" button.
-*** textButton: *** Text for de reset button, default is "Delete filters"
-*** buttonColor: *** Color for the button
-*** bgColor: *** Background color for extension view
-
-
-
-## Features
-List of features provided by your extension.
-- Feature 1
-- Feature 2
-- Feature 3
+**bShowFilters: true** this will show/hide the list of filters, with true will the extension just show the "reset" button.
+**textButton:** Text for de reset button, default is "Delete filters"
+**buttonColor:** Color for the button
+**buttonTextColor:** Button text color
+**bgColor:** Background color for extension view
 
 ## Contributing
 todo
