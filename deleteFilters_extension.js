@@ -259,9 +259,21 @@ function initialize() {
           $("#tableFilters").hide()
       }
 
-      if(config_data["bgColor"] != "")  {
-        c(config_data["bgColor"])
+      if("bgColor" in config_data)  {
+        c(config_data["bgColor"], "*********** bgColor ***********")
         $("body").css("background-color",config_data["bgColor"])
+      }
+
+
+      if ("textButton" in config_data)  {
+        $("#deleteFilters").text(config_data["textButton"])
+      }
+
+      if ("buttonColor" in config_data) {
+        $("#deleteFilters").css("background-color",config_data["buttonColor"])
+      }
+      if ("buttonTextColor" in config_data) {
+        $("#deleteFilters").css("color",config_data["buttonTextColor"])
       }
 
       // Add button handlers for clearing filters.
