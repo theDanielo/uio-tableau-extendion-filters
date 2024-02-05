@@ -2,7 +2,14 @@
 uio-tableau-extension-filters
 
 ## Description
-This Tableau extension is designed to enhance user interaction with data filters within Tableau dashboards. The key functionality of this extension includes:
+
+An extension in Tableau is a tool that allows you to integrate third-party applications directly into your Tableau dashboards, enhancing their functionality and interactivity. 
+
+Extensions are developed using standard web technologies such as HTML, JavaScript, and CSS. The Tableau Extensions API provides a JavaScript library that developers use to interact with the Tableau environment, manipulate data, and respond to user events within the dashboard.
+After developing your web application, you need to host it on a web server.
+
+
+This Tableau extension is designed to enhance user interaction with data filters within Tableau dashboards.
 This extension is totaly sandboxed, means that no data goes from or to the dashboard.
 
 **Filter overview**: Users see what filters are been active in the views.

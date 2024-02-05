@@ -1,7 +1,7 @@
 
 (function () {
 
-is_in_production = false
+is_in_production = true
 
 function c (t,s="") {
     if (is_in_production) {
